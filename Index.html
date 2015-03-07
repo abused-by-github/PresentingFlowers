@@ -117,8 +117,8 @@
                 var sourceName = $('#sourcePerson').val();
                 var targetName = $('#targetPerson').val();
                 if (source && target) {
-                    var url = window.location.origin + window.location.pathname +
-                        '?source=' + source + '&target=' + target +
+                    var url = window.location.origin +
+                        'Index.html?source=' + source + '&target=' + target +
                         '&sourceName=' + encodeURIComponent(sourceName) + '&targetName=' + encodeURIComponent(targetName);
                     $('#link').attr('href', url).text(url);
                 } else{
